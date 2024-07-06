@@ -16,6 +16,10 @@ body{
 
 /* shared color */
 
+.secondary-bg{
+    background-color: #FFF8F3;
+}
+
 .text-primary{
     color: #FD6E0A;
 }
@@ -32,6 +36,17 @@ body{
     padding: 18px 35px;
     border-radius: 5px;
     
+}
+
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+}
+
+.section-description{
+    font-size: 18px;
+    color: #757575;
 }
 
 .btn-bg-transparent{
@@ -126,4 +141,48 @@ nav ul li a{
 
 .banner-profile-image{
     width:580px;
+}
+
+
+/* main */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* about */
+
+.about{
+    border-radius: 10px;
+    margin: 130px 0px;
+    padding: 130px 150px;
+    text-align: center;
+}
+
+.about-content{
+    border: 1px solid black;
+    background-color: white;
+    
+    text-align: center;
+    padding: 10px;
+}
+
+.section-m{
+    margin: 30px 0px;
+}
+
+.about-items{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.item-title{
+    color: #757575;
+}
+.item-description{
+    font-weight: 700;
+    color: #474747;
 }
