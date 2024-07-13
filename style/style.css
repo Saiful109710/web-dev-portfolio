@@ -5,16 +5,18 @@
     margin:0;
     padding: 0;
 }
+
+
 body{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+   
 
-      max-width:1600px;
+     max-width:1600px;
       margin: 0 auto;
+      
 }
 
 /* shared color */
@@ -73,8 +75,10 @@ body{
 
 .header{
     background-image: url(../images/developer.png),url(../images/header_bg.png);
+  
     background-repeat: no-repeat;
     background-position: top left, bottom right;
+    
 }
 
 nav{
@@ -280,6 +284,7 @@ footer{
     display: flex;
     padding: 130px 230px;
     gap: 110px;
+    margin: 0 auto;
 }
 
 .footer-column{
@@ -301,3 +306,65 @@ footer input[type="text"],footer input[type="email"],footer textarea{
     color: #757575;
     font-size: 16px;
 }
+
+
+@media screen and (max-width:576px){
+    .skills-container,
+    .resume-container,
+    footer,
+    .about-items{
+        flex-direction: column;
+    }
+
+    footer,
+    .about{
+        padding: 20px;
+    }
+
+    .footer-column,
+    footer input[type="text"], footer input[type="email"], footer textarea {
+        width:calc(100% - 40px);
+    }.banner {
+       
+        margin:0px;
+        flex-direction: column;
+    }
+
+    .banner-content {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-bg-transparent {
+       
+        margin-left: 00px;
+       
+    }
+
+    .banner-description{
+        text-align: center;
+    }
+
+    .banner-profile-image {
+        width: 100%;
+    }
+
+    nav {
+
+        margin: 0;
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+
+    
+
+    
+}
+
